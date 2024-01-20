@@ -8,6 +8,8 @@ COPY . .
 # clean install
 RUN npm ci
 
+RUN npm run lint
+
 RUN npm run build
 
 EXPOSE 3000

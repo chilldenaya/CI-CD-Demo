@@ -1,0 +1,12 @@
+version: "3"
+services:
+  expressjs-app:
+    container_name: expressjs-app-container
+    build: ./expressjs-app
+    ports:
+      - "8000:8000"
+  nextjs-app:
+    container_name: nextjs-app-container
+    build: ./nextjs-app
+    ports:
+      - "3000:3000"

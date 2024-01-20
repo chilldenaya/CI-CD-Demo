@@ -8,7 +8,7 @@ COPY . .
 # clean install
 RUN npm ci
 
-EXPOSE 8080
+EXPOSE 8000
 
 # The CMD command is used to provide default commands for the container to execute when it starts
 CMD ["node", "index.js"]
